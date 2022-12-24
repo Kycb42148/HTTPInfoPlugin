@@ -1,10 +1,19 @@
-# Plugin Template
+# HTTP Info Plugin
+Simple plugin that responds with player count, current map and wave on an HTTP request.
 
 ## Building
-First, make sure you have JDK 14 installed. Then, setup [plugin.json](assets/plugin.json) and run the following commands:
+First, make sure you have JDK 17 installed. Then, run the following commands:
 
 * Windows: `gradlew jar`
 * *nix/Mac OS: `./gradlew jar`
+
+## Configuration
+Edit `http_config.json` file in your `config/mods` directory to change port, example:
+```json
+{
+  "port": 6500
+}
+```
 
 ### Troubleshooting
 
