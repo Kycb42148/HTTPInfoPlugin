@@ -1,11 +1,11 @@
 {
-  "name": "plugin-template",
-  "displayName": "Plugin Template",
-  "description": "A template for plugins for Mindustry.",
-  "author": "Mindustry Inside",
-  "main": "inside.Template",
+  "name": "http-info-plugin",
+  "displayName": "HTTP Info Plugin",
+  "description": "A plugin that responds with server information to an HTTP request.",
+  "author": "Kycb42148",
+  "main": "kycb.httpinfoplugin.HttpInfoPlugin",
   "hidden": false,
   "java": true,
   "version": "1.0",
-  "minGameVersion": 126.2
+  "minGameVersion": 140.4
 }

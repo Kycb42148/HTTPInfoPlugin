@@ -1,9 +1,10 @@
-package inside;
+package kycb.httpinfoplugin;
 
 import arc.util.*;
 import mindustry.mod.*;
 
-public class Template extends Plugin {
+public class HttpInfoPlugin extends Plugin {
+
 
     @Override
     public void init() {
