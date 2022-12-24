@@ -1,0 +1,11 @@
+{
+  "name": "plugin-template",
+  "displayName": "Plugin Template",
+  "description": "A template for plugins for Mindustry.",
+  "author": "Mindustry Inside",
+  "main": "inside.Template",
+  "hidden": false,
+  "java": true,
+  "version": "1.0",
+  "minGameVersion": 126.2
+}
