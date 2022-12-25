@@ -29,7 +29,7 @@ public class HttpInfoPlugin extends Plugin {
 
         try {
             HttpServer httpServer = HttpServer.create();
-            httpServer.bind(new InetSocketAddress("localhost", config.getPort()), 0);
+            httpServer.bind(new InetSocketAddress(config.getPort()), 0);
             httpServer.createContext("/", httpExchange -> {
                 var data = j.toJson(new ServerInfo(Groups.player.size(), Vars.state.wave, Vars.state.map.name())).getBytes(StandardCharsets.UTF_8);
                 httpExchange.sendResponseHeaders(200, data.length);
