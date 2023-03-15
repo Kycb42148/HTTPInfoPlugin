@@ -32,6 +32,7 @@ public class HttpInfoPlugin extends Plugin {
             httpServer.bind(new InetSocketAddress(config.getPort()), 0);
             httpServer.createContext("/", httpExchange -> {
                 var data = j.toJson(new ServerInfo(Groups.player.size(), Vars.state.wave, Vars.state.map.name())).getBytes(StandardCharsets.UTF_8);
+                httpExchange.getResponseHeaders().set("Content-Type", "application/json; charset=UTF-8");
                 httpExchange.sendResponseHeaders(200, data.length);
                 var out = httpExchange.getResponseBody();
                 out.write(data);
